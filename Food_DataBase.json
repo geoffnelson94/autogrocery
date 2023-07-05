@@ -1,0 +1,71 @@
+{
+    "Produce": [
+        "Apple",
+        "Carrot",
+        "Grape",
+        "Lemon",
+        "Lettuce",
+        "Onion",
+        "Orange",
+        "Potato",
+        "Tomato",
+        "Spinach",
+        "Garlic", 
+        "Green Bean",
+        "Mushroom", 
+        "basil",
+        "Broccoli",
+        "ginger"
+    ],
+
+    "Dairy": [
+        "Milk",
+        "Cheese",
+        "Butter",
+        "Egg"
+    ],
+
+    "Meat": [
+        "Turkey",
+        "Pork",
+        "Beef",
+        "Chicken"
+    ],
+
+    "Frozen": [
+
+    ],
+
+    "Beverages": [
+        "Beer",
+        "Tea",
+        "Coffee",
+        "Lemonade",
+        "Water"
+    ],
+
+    "Bakery": [
+        "Bagel",
+        "Bun"
+    ],
+
+    "Canned": [
+        "soy sauce",
+        "oyster sauce",
+        "sesame oil",
+        "tahini",
+        "chili paste"
+    ],
+
+    "Dry": [
+        "Cereal",
+        "Rice",
+        "Noodle",
+        "udon", 
+        "sugar"
+    ],
+    
+    "Other": [
+
+    ]
+}
