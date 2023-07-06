@@ -33,7 +33,7 @@
     ],
 
     "Frozen": [
-
+        "frozen"
     ],
 
     "Beverages": [
@@ -53,7 +53,8 @@
         "oyster sauce",
         "sesame oil",
         "tahini",
-        "chili paste"
+        "chili paste",
+        "rice vinegar"
     ],
 
     "Dry": [

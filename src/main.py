@@ -14,6 +14,8 @@ f = open('Ignored_Ingredients.json')
 ignoredList = json.load(f)
 f.close()
 ignoredItems = ignoredList["ignore"]
+for idx, item in enumerate(ignoredItems):
+    ignoredItems[idx] = item.upper()
 
 f = open('Recipes.json')
 recipes = json.load(f)
@@ -22,16 +24,15 @@ f.close()
 for recipe in recipes["urls"]:
     scraper = scrape_me(recipe, wild_mode=True)
     ingredients = scraper.ingredients()
-    
-    for index, word in enumerate(ingredients):
-        ingredients[index] = st.stem(word)
 
     for cat in database:
         for item in database[cat]:
             for ingredient in ingredients:
-                if any(ignoredItem in ingredient for ignoredItem in ignoredItems):
+                # ignore common household items
+                if any(ignoredItem in ingredient.upper() for ignoredItem in ignoredItems):
                     ingredients.remove(ingredient)
                     break
+                # If an item in the database matches with something in the ingredient, add to respected category
                 if item.upper() in ingredient.upper():
                     categories[cat].append(ingredient)
                     ingredients.remove(ingredient)
