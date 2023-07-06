@@ -9,6 +9,11 @@ f.close()
 categories = {}
 for cat in database:
     categories.update({cat:[]})
+    
+f = open('Ignored_Ingredients.json')
+ignoredList = json.load(f)
+f.close()
+ignoredItems = ignoredList["ignore"]
 
 f = open('Recipes.json')
 recipes = json.load(f)
@@ -24,6 +29,9 @@ for recipe in recipes["urls"]:
     for cat in database:
         for item in database[cat]:
             for ingredient in ingredients:
+                if any(ignoredItem in ingredient for ignoredItem in ignoredItems):
+                    ingredients.remove(ingredient)
+                    break
                 if item.upper() in ingredient.upper():
                     categories[cat].append(ingredient)
                     ingredients.remove(ingredient)
