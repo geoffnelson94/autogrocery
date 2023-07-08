@@ -15,7 +15,22 @@
         "Mushroom", 
         "basil",
         "Broccoli",
-        "ginger"
+        "ginger",
+        "bell pepper",
+        "celery",
+        "scallions"
+    ],
+
+    "Spices": [
+        "red pepper flakes",
+        "thyme",
+        "bay leaves",
+        "sesame seeds",
+        "parsley",
+        "garlic powder",
+        "onion powder",
+        "chili powder",
+        "cayenne"
     ],
 
     "Dairy": [
@@ -25,11 +40,18 @@
         "Egg"
     ],
 
+    "Canned_And_Jarred": [
+        "tahini",
+        "chili paste",
+        "chicken broth"
+    ],
+
     "Meat": [
         "Turkey",
         "Pork",
         "Beef",
-        "Chicken"
+        "Chicken",
+        "sausage"
     ],
 
     "Frozen": [
@@ -38,31 +60,31 @@
 
     "Beverages": [
         "Beer",
-        "Tea",
         "Coffee",
         "Lemonade"    
     ],
 
     "Bakery": [
         "Bagel",
-        "Bun"
+        "hamburger bun"
     ],
 
-    "Canned": [
+    "Sauces_and_Oil": [
+        "hot sauce",
         "soy sauce",
         "oyster sauce",
         "sesame oil",
-        "tahini",
-        "chili paste",
         "rice vinegar"
     ],
 
     "Dry": [
         "Cereal",
-        "Rice",
-        "Noodle",
+        "noodle",
+        "rice",
         "udon", 
-        "sugar"
+        "brown sugar",
+        "sugar",
+        "flour"
     ],
     
     "Other": [
